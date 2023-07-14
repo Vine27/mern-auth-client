@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Layout from './core/Layout.jsx';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <Layout>
+      <div className= "col-md-6 offset-md-3 text-center">
+        <h1 className='p-5'>React Node MongoDB Authentication Boilerplate</h1>
+        <h2>MERN STACK</h2>
+        <hr/>
+        <p className="lead">
+          MERN Stack is a Javascript Stack that is used for easier and faster deployment of full-stack web applications. 
+          MERN Stack comprises of 4 technologies namely: MongoDB, Express, React and Node.js. 
+          
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+       <h5>  MERN stack login register system with account activation, forgot password, reset password, login
+                    with facebook and google as well as private and protected routes for authenticated user and users
+                    with the role of admin.
+                    </h5>
+      </div>
+    </Layout>
+  )
 }
 
 export default App;
